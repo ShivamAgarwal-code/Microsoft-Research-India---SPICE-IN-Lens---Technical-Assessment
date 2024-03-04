@@ -1,0 +1,50 @@
+{
+  "id": "f99d4bfa-adc4-4853-aaff-d72dac04d34e",
+  "version": "2.0",
+  "name": "microsoft_assessment",
+  "url": "https://arxiv.org",
+  "tests": [{
+    "id": "6bc14855-c5f7-4a64-87b4-f6344c738789",
+    "name": "microsoft_assessment",
+    "commands": [{
+      "id": "6879465e-22bf-4dcd-b0eb-4571b1ef3457",
+      "comment": "",
+      "command": "open",
+      "target": "/list/astro-ph.GA/new",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2897923f-c531-475d-8342-2887e6058094",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54d4eb11-3e89-49e7-8678-f084e932e065",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=pdf",
+      "targets": [
+        ["linkText=pdf", "linkText"],
+        ["css=dl:nth-child(10) > dt:nth-child(1) a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'pdf')]", "xpath:link"],
+        ["xpath=//div[@id='dlpage']/dl/dt/span/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pdf/2402.18623')]", "xpath:href"],
+        ["xpath=//span/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'pdf')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b5256b70-d4e9-408b-9c92-1f58de9578be",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6bc14855-c5f7-4a64-87b4-f6344c738789"]
+  }],
+  "urls": ["https://arxiv.org/"],
+  "plugins": []
+}
